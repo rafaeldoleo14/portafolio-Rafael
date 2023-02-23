@@ -34,20 +34,29 @@ export const Navbar = () => {
                     <p>01.</p>
                     <a href="/#about" className={`${location.hash === '#about' 
                     || location.hash === '' ? 'active' : ''}`}>
-                    Inicio
+                        Inicio
                     </a>
                 </li>
 
                 <li>
                     <p>02.</p>
                     <a href="/#skills" className={`${location.hash === '#skills' ? 'active' : ''}`}>
-                    Habilidades
+                        Habilidades
                     </a>
                 </li>
 
                 <li>
                     <p>03.</p>
-                    <a href="#contact">Contacto</a>
+                    <a href="/#proyects" className={`${location.hash === '#proyects' ? 'active' : ''}`}>
+                        Proyectos
+                    </a>
+                </li>
+
+                <li>
+                    <p>04.</p>
+                    <a href="/#contact" className={`${location.hash === '#contact' ? 'active' : ''}`}>
+                        Contacto
+                    </a>
                 </li>
 
             </ul>
