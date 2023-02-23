@@ -30,7 +30,6 @@ section .info div{
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 25px;
 }
 
 section .info div button{

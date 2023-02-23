@@ -37,12 +37,12 @@ export const skills = [
   },
 
   {
-    id: 'Tailwind CSS',
+    id: 'Tailwind',
     icon: <SiTailwindcss size={55}/>,
   },
 
   {
-    id: 'Material UI',
+    id: 'MUI',
     icon: <SiMaterialui size={55}/>,
   },
   {

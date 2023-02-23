@@ -44,8 +44,6 @@ export const Skills = () => {
                             md: '29px', 
                             lg: '35px',
                         },
-                        gridColumn: '1/7',
-                        alignItems: 'end'
                 }}
                 >
                     Habilidades
@@ -54,7 +52,10 @@ export const Skills = () => {
                 <Grid
                 sx={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(110px, 1fr))',
+                gridTemplateColumns: {
+                    xs: 'repeat(auto-fill, minmax(85px, 1fr))',
+                    sm: 'repeat(auto-fill, minmax(120px, 1fr))',
+                },
                 placeItems: 'center',
                 gap: {
                     xs: '30px',

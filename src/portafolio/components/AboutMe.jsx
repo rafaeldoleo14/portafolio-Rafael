@@ -57,26 +57,31 @@ export const AboutMe = () => {
                 sx={{fontSize: {xs: '22px', sm: '22px', md: '26px', lg: '40px'}}}>Rafael Francisco</Typography>
 
                 <Typography component='h1' 
-                sx={{fontSize: {xs: '28px', sm: '28px', md: '25px', lg: '50px'}}}>Desarrollador <span>Frontend</span></Typography>
+                sx={{fontSize: {xs: '23px', sm: '28px', md: '25px', lg: '50px'}}}>Desarrollador <span>Frontend</span></Typography>
 
                 <Typography component='p'
                 sx={{ fontSize: {xs: '15px', sm: '14px', md: '18px'}}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Esse quam mollitia at aperiam? Exercitationem ullam mollitia praesentium repellendus similique dolorum commodi, 
                 facere magnam molestiae vitae a at magni, ab quis.</Typography>
 
-                <div>
+                <Grid sx={{
+                    gap: {
+                        xs: '15px',
+                        sm: '25px'
+                    }
+                }}>
                     <button>Descargar CV</button>
                     <i class="ri-github-fill"></i>
                     <i class="ri-linkedin-box-fill"></i>
                     <i class="ri-mail-line"></i>
-                </div>
+                </Grid>
 
             </Grid>
 
             <div data-aos="flip-left"
                 data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 
-                    <ImageListItem sx={{width: {xs: '330px', sm: '300px', md: '400px',lg: '450px'}}}>
+                    <ImageListItem sx={{width: {xs: '280px', sm: '300px', md: '400px',lg: '450px'}}}>
                         <img src={mainImage} alt="" />
                     </ImageListItem>
 
