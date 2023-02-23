@@ -43,6 +43,7 @@ header{
 
 .navbar{
     display: flex;
+    z-index: 1002px;
 }
 
 .navbar li p{
