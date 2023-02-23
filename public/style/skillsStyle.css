@@ -1,0 +1,32 @@
+:root{
+    --bg-color: #111827;
+    --text-color: #fff;
+    --main-color: #29fd53;
+    --primary-color: #54c4d0;
+}
+
+
+.skill-title{
+    color: transparent;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, var(--primary-color) 10%, var(--main-color)10%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.skill-name{
+    color: transparent;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, var(--primary-color) 50%, var(--main-color)5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.icon-container svg{
+    transition: all 0.50s ease;
+}
+
+.icon-container svg:hover{
+    transform: translateY(-10%);
+    filter: drop-shadow(0 5px 15px white);
+}

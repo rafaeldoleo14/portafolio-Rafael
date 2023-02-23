@@ -1,0 +1,150 @@
+:root{
+    --bg-color: #111827;
+    --text-color: #fff;
+    --main-color: #29fd53;
+    --primary-color: #54c4d0;
+}
+
+header{
+    background-color: var(--bg-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span{
+    color: transparent;
+    background-image: linear-gradient(45deg, var(--main-color) 10%, var(--primary-color)50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all 0.50s ease;
+}
+
+.navbar a:hover{
+    font-weight: 500;
+    color: transparent;
+    background-image: linear-gradient(45deg, var(--main-color) 30%, var(--primary-color)50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.navbar a.active{
+    font-weight: 500;
+    color: transparent;
+    background-image: linear-gradient(45deg, var(--main-color) 30%, var(--primary-color)50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+
+
+#menu-icons{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+@media (max-width: 1280px){
+    header{
+        padding: 14px;
+        transition: .2s;
+    }
+
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+        
+    }
+}
+
+@media (max-width: 1280px){
+
+    header{
+        top: 0;
+        right: 0;
+        left: -20px;
+    }
+
+    #menu-icons{
+        display: block;
+    }
+
+    .logo{
+        position: relative;
+        left: 35px;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -1000%;
+        width: 270px;
+        height: 24vh;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover{
+        color: var(--text-color);
+        transform: translateY(5px);
+    }
+
+    .navbar a.active{
+        color: var(--text-color);
+    }
+
+    
+}
