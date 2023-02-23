@@ -16,7 +16,7 @@ export const Skills = () => {
   return (
     <>
 
-            <Grid data-aos="fade-right"
+            <Grid id={'skills'} data-aos="fade-right"
             sx={{
                 marginBottom: '50px',
                 display: 'flex',

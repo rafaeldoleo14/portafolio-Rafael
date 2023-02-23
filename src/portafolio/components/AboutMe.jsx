@@ -14,7 +14,7 @@ export const AboutMe = () => {
   return (
     <>
     
-        <Grid component='section'  
+        <Grid id='about' component='section'  
         sx={{
             marginTop:{
                 xs: '110px',
