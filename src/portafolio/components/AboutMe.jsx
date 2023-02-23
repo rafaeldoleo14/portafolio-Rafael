@@ -57,7 +57,7 @@ export const AboutMe = () => {
                 sx={{fontSize: {xs: '22px', sm: '22px', md: '26px', lg: '40px'}}}>Rafael Francisco</Typography>
 
                 <Typography component='h1' 
-                sx={{fontSize: {xs: '28px', sm: '28px', md: '29px', lg: '50px'}}}>Desarrollador <span>Frontend</span></Typography>
+                sx={{fontSize: {xs: '28px', sm: '28px', md: '25px', lg: '50px'}}}>Desarrollador <span>Frontend</span></Typography>
 
                 <Typography component='p'
                 sx={{ fontSize: {xs: '15px', sm: '14px', md: '18px'}}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
