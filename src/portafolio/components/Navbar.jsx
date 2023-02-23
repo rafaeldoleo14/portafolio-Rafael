@@ -8,6 +8,8 @@ export const Navbar = () => {
     const [btnState, setBtnState] = useState(false);
     const location = useLocation();
 
+    console.log(location)
+
     const handleClick = ()=>{
         setBtnState(btnState => !btnState)
     }
@@ -30,7 +32,8 @@ export const Navbar = () => {
 
                 <li>
                     <p>01.</p>
-                    <a href="/#about" className={`${location.hash === '#about' ? 'active' : ''}`}>
+                    <a href="/#about" className={`${location.hash === '#about' 
+                    || location.hash === '' ? 'active' : ''}`}>
                     Inicio
                     </a>
                 </li>
