@@ -9,6 +9,7 @@ import { IoLogoNodejs } from 'react-icons/io';
 import { GrMysql } from 'react-icons/gr';
 import { AiFillGithub } from 'react-icons/ai';
 import {FaHtml5} from 'react-icons/fa'
+import {SiFirebase} from 'react-icons/si';
 
 export const skills = [
   {
@@ -55,6 +56,11 @@ export const skills = [
     icon: <GrMysql size={55}/>,
   },
   
+  {
+    id: 'Firebase',
+    icon: <SiFirebase size={55}/>
+  },
+
   {
     id: 'Git',
     icon: <AiFillGithub size={55}/>,
