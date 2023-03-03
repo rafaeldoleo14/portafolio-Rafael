@@ -19,8 +19,13 @@ export const Skills = () => {
             <Grid id={'skills'} data-aos="fade-right"
             sx={{
                 marginBottom: '50px',
+                height: {
+                    xs: 'auto',
+                    md: '100vh'
+                },
                 display: 'flex',
                 flexDirection: 'Column',
+                justifyContent: 'center',
                 gap: {
                     xs: '30px',
                     sm: '40px',
@@ -86,9 +91,6 @@ export const Skills = () => {
 
         </Grid>
 
-                
-    
-        
     
     </>
   )
