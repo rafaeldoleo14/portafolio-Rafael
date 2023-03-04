@@ -20,7 +20,7 @@ export const Proyects = () => {
                 sx={{
                     marginBottom: '50px',
                     height: {
-                        xs: 'auto',
+                        xs: '100vh',
                         md: '100vh'
                     },
                     display: 'flex',
