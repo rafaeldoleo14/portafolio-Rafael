@@ -47,7 +47,7 @@ export const Navbar = () => {
 
                 <li>
                     <p>03.</p>
-                    <a href="/#proyects" className={`${location.hash === '#proyects' ? 'active' : ''}`}>
+                    <a href="/#projects" className={`${location.hash === '#projects' ? 'active' : ''}`}>
                         Proyectos
                     </a>
                 </li>
