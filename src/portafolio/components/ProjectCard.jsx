@@ -16,7 +16,7 @@ export const ProjectCard = ({title, img, skillUsed, link}) => {
             <Card data-aos="flip-up"  data-aos-duration="500" 
                 className='card' sx={
                     { maxWidth: {
-                        xs: '260px',
+                        xs: '270px',
                         sm: '345px'
                     }, 
                     backgroundColor: '#111827'}}>
@@ -25,7 +25,7 @@ export const ProjectCard = ({title, img, skillUsed, link}) => {
                 target="_blank" rel="noopener noreferrer">
 
                 <CardMedia
-                    sx={{ height: 200, width: {xs: '260px', sm: '345px'}, backgroundSize: 'cover'}}
+                    sx={{ height: 200, width: {xs: '270px', sm: '345px'}, backgroundSize: 'cover'}}
                     image={img}
                     title={title}
                 />

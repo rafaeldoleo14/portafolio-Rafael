@@ -56,7 +56,7 @@ export const Projects = () => {
                 <Grid sx={{
                     display: 'grid',
                     gridTemplateColumns: {
-                        xs: 'repeat(auto-fill, minmax(260px, 1fr))',
+                        xs: 'repeat(auto-fill, minmax(270px, 1fr))',
                         sm: 'repeat(auto-fill, minmax(345px, 1fr))'
                     },
                     placeItems: 'center',
