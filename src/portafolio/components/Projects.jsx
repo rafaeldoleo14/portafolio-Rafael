@@ -6,7 +6,7 @@ import '../../../public/style/projectsStyle.css';
 import { projects } from '../data/projects';
 import { ProjectCard } from './ProjectCard';
 
-export const Proyects = () => {
+export const Projects = () => {
 
     useEffect(()=>{
         Aos.init({duration: 2000});
@@ -55,7 +55,10 @@ export const Proyects = () => {
 
                 <Grid sx={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(345px, 1fr))',
+                    gridTemplateColumns: {
+                        xs: 'repeat(auto-fill, minmax(260px, 1fr))',
+                        sm: 'repeat(auto-fill, minmax(345px, 1fr))'
+                    },
                     placeItems: 'center',
                     gap: {
                         xs: '30px',
