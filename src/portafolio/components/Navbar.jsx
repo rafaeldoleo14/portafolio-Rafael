@@ -20,7 +20,7 @@ export const Navbar = () => {
   return (
     <>
 
-        <header style={{backgroundColor: '#111827'}} className='animate__animated animate__fadeInDownBig'>
+        <header style={{backgroundColor: '#111827d9'}} className='animate__animated animate__fadeInDownBig'>
 
             <a href="" className='logo'>
                 <i class="ri-code-s-slash-line"></i>
