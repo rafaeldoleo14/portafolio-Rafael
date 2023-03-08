@@ -25,7 +25,7 @@ export const ProjectCard = ({title, img, skillUsed, link}) => {
                 target="_blank" rel="noopener noreferrer">
 
                 <CardMedia
-                    sx={{ height: 200, width: {xs: '260px', sm: '345px'}, objectFit: 'cover'}}
+                    sx={{ height: 200, width: {xs: '260px', sm: '345px'}, backgroundSize: 'cover'}}
                     image={img}
                     title={title}
                 />

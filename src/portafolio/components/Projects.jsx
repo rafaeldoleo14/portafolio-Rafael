@@ -20,8 +20,8 @@ export const Projects = () => {
                 sx={{
                     marginBottom: '50px',
                     height: {
-                        xs: '100vh',
-                        md: '100vh'
+                        xs: 'auto',
+                        md: 'auto'
                     },
                     display: 'flex',
                     flexDirection: 'Column',
