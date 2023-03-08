@@ -21,7 +21,7 @@ export const Projects = () => {
                     marginBottom: '50px',
                     height: {
                         xs: 'auto',
-                        md: 'auto'
+                        md: '100vh'
                     },
                     display: 'flex',
                     flexDirection: 'Column',
