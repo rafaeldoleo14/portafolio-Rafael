@@ -1,8 +1,8 @@
 
 import { Grid, Typography } from '@mui/material'
 import React, { useEffect } from 'react'
-import { skills } from '../data/skills';
-import '../../../public/style/skillsStyle.css'
+import { skills } from '../../data/skills';
+import './Skills.css'
 import { ItemsSkill } from './ItemsSkill';
 import Aos from 'aos';
 import 'aos/dist/aos.css';

@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom';
-import '../../../public/style/navBarStyle.css';
+import './NavBar.css';
 
 export const Navbar = () => {
 

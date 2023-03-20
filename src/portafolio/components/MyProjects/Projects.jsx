@@ -2,8 +2,8 @@
 import { Grid, Typography } from '@mui/material'
 import Aos from 'aos';
 import React, { useEffect } from 'react';
-import '../../../public/style/projectsStyle.css';
-import { projects } from '../data/projects';
+import './Projects.css';
+import { projects } from '../../data/projects';
 import { ProjectCard } from './ProjectCard';
 
 export const Projects = () => {

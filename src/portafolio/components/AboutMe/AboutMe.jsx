@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
-import mainImage from '../../assets/img/mainImage.png';
-import '../../../public/style/aboutMeStyle.css'
+import mainImage from '../../../assets/img/mainImage.png';
+import './AboutMe.css'
 import { Grid, ImageListItem, Typography } from '@mui/material';
 import Aos from 'aos';
 
