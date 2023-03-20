@@ -2,7 +2,7 @@ import { Grid, TextField, Typography } from '@mui/material'
 import Aos from 'aos';
 import React from 'react';
 import { useEffect } from 'react';
-import '../../../public/style/contactStyle.css'
+import './Contact.css'
 
 export const Contact = () => {
 
