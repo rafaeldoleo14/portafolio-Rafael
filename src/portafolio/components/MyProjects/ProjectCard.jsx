@@ -13,55 +13,25 @@ export const ProjectCard = ({title, img, skillUsed, link}) => {
   return (
     <>
         
-            <Card data-aos="flip-up"  data-aos-duration="500" 
-                className='card' sx={
-                    { maxWidth: {
-                        xs: '270px',
-                        sm: '345px'
-                    }, 
-                    backgroundColor: '#111827'}}>
+        <Link target="_blank" to={link} className='card'>
+            
+                <img className='card-img' src={img} alt={title} />
 
-                <Link  to={link} 
-                target="_blank" rel="noopener noreferrer">
+                <div className='title-content'>
 
-                <CardMedia
-                    sx={{ height: 200, width: {xs: '270px', sm: '345px'}, backgroundSize: 'cover'}}
-                    image={img}
-                    title={title}
-                />
+                    <h4 className='project-item-title'>{title}</h4>
 
-                <CardContent 
-                    sx={{backgroundColor: '#1b2335', 
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: '10px'}}>
+                    <ul className='project-ul'>
+                        {
+                            skillUsed.map((item)=>(
+                                <li key={item}>{item}</li>
+                            ))
+                        }
+                    </ul>
 
-                    <Typography gutterBottom variant="p" component="div" className='project-item-title'>
-                        {title}
-                    </Typography>
-
-                    <Grid>
-
-                        <ul className='project-ul'>
-                            {skillUsed.map((skill, id) => (
-                            <li key={id}>{skill}</li>
-                            ))}
-                        </ul>
-
-                    </Grid>
-                    
-                </CardContent>
-
-                {/* <CardActions>
-
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-
-                </CardActions> */}
-                </Link>
-
-            </Card>
-
+                </div>
+            
+        </Link>
     
     </>
   )

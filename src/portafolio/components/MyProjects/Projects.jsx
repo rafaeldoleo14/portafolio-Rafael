@@ -57,7 +57,7 @@ export const Projects = () => {
                     display: 'grid',
                     gridTemplateColumns: {
                         xs: 'repeat(auto-fill, minmax(270px, 1fr))',
-                        sm: 'repeat(auto-fill, minmax(345px, 1fr))'
+                        sm: 'repeat(auto-fill, minmax(300px, 1fr))'
                     },
                     placeItems: 'center',
                     gap: {

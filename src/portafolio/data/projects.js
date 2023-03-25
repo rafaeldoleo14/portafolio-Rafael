@@ -1,6 +1,7 @@
 
 import criptoProject from '../../assets/img/projectsImg/criptoProject.png';
 import fullSecurityProject from '../../assets/img/projectsImg/full security.jpg';
+import weatherProject from '../../assets/img/projectsImg/appClima.png';
 
 export const projects = [
 
@@ -18,6 +19,14 @@ export const projects = [
         img: fullSecurityProject,
         skillUsed: ['React', 'CSS',],
         link: 'https://full-security.netlify.app/'
+    },
+
+    {
+        id: 3,
+        title: 'Weather App',
+        img: weatherProject,
+        skillUsed: ['React', 'Typescript', 'Boostrap'],
+        link: 'https://weather-rafael.netlify.app/'
     },
 
 
