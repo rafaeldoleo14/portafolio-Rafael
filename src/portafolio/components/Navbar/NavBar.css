@@ -5,7 +5,7 @@
     --primary-color: #54c4d0;
 }
 
-header{
+nav{
     background-color: var(--bg-color);
     position: fixed;
     width: 100%;
@@ -46,8 +46,18 @@ header{
     z-index: 1002px;
 }
 
+.ul-content{
+    display: flex;
+}
+
 .navbar li p{
     display: none;
+}
+
+.img-navigation{
+    display: none;
+    width: 250px;
+    border-radius: 5px;
 }
 
 .navbar a{
@@ -91,13 +101,9 @@ header{
     display: none;
 }
 
-.bx{
-    
-    
-}
 
 @media (max-width: 1280px){
-    header{
+    nav{
         padding: 14px;
         transition: .2s;
     }
@@ -111,7 +117,7 @@ header{
 
 @media (max-width: 1280px){
 
-    header{
+    nav{
         top: 0;
         right: 0;
         left: -20px;
@@ -130,7 +136,7 @@ header{
         position: absolute;
         top: 0%;
         right: -1000%;
-        width: 270px;
+        width: 300px;
         height: 100vh;
         background-color: #1b2335;
         display: flex;
@@ -138,6 +144,17 @@ header{
         justify-content: space-evenly;
         align-items: center;
         transition: all .50s ease;
+    }
+
+    .ul-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .img-navigation{
+        display: inline;
+        width: 250px;
+        border-radius: 5px;
     }
 
     .navbar li{
@@ -150,6 +167,7 @@ header{
     .navbar li p{
         display: inline;
         color: #54c4d0;
+        font-size: 0.9em;
     }
 
     .navbar a{
