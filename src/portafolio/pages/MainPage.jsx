@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Footer } from '../components/Footer/Footer'
 import { Navbar, AboutMe, Skills, Projects, Contact  } from '../components/index'
 
 export const MainPage = () => {
@@ -15,6 +16,8 @@ export const MainPage = () => {
         <Projects/>
 
         <Contact/>
+
+        <Footer/>
 
     </>
   )
