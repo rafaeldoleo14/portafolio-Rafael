@@ -1,16 +1,13 @@
 
-import React, { useState } from 'react'
+import React from 'react'
 import { useLocation } from 'react-router-dom';
+import { useClick } from '../../hooks/useClick';
 import './NavBar.css';
 
 export const Navbar = () => {
 
-    const [btnState, setBtnState] = useState(false);
+    const {btnState, handleClick} = useClick();
     const location = useLocation();
-
-    const handleClick = ()=>{
-        setBtnState(btnState => !btnState)
-    }
 
     const menuToogle = btnState ? 'bx-x' : '';
     const navbarToogle = btnState ? 'open' : '';
