@@ -13,7 +13,7 @@ export const ProjectCard = ({title, img, skillUsed, link}) => {
   return (
     <>
         
-        <Link target="_blank" to={link} className='card'>
+        <Link data-aos="flip-up" target="_blank" to={link} className='card'>
             
                 <img className='card-img' src={img} alt={title} />
 

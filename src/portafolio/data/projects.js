@@ -2,6 +2,7 @@
 import criptoProject from '../../assets/img/projectsImg/criptoProject.png';
 import fullSecurityProject from '../../assets/img/projectsImg/full security.jpg';
 import weatherProject from '../../assets/img/projectsImg/appClima.png';
+import todoListProject from '../../assets/img/projectsImg/todoListImg.png';
 
 export const projects = [
 
@@ -27,6 +28,14 @@ export const projects = [
         img: weatherProject,
         skillUsed: ['React', 'Typescript', 'Boostrap'],
         link: 'https://weather-rafael.netlify.app/'
+    },
+
+    {
+        id: 4,
+        title: 'Todo List',
+        img: todoListProject,
+        skillUsed: ['React', 'Typescript', 'Redux Tk'],
+        link: 'https://todoapp-rafael.netlify.app/'
     },
 
 
