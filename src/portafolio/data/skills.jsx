@@ -10,6 +10,10 @@ import { GrMysql } from 'react-icons/gr';
 import { AiFillGithub } from 'react-icons/ai';
 import {FaHtml5} from 'react-icons/fa'
 import {SiFirebase} from 'react-icons/si';
+import {SiTrello} from 'react-icons/si';
+import {SiPostman} from 'react-icons/si';
+import {SiExpress} from 'react-icons/si';
+import {SiMongodb} from 'react-icons/si'
 
 export const skills = [
   {
@@ -52,6 +56,16 @@ export const skills = [
   },
 
   {
+    id: 'Express JS',
+    icon: <SiExpress size={55}/>,
+  },
+
+  {
+    id: 'Mongo db',
+    icon: <SiMongodb size={55}/>,
+  },
+
+  {
     id: 'Mysql',
     icon: <GrMysql size={55}/>,
   },
@@ -65,4 +79,15 @@ export const skills = [
     id: 'Git',
     icon: <AiFillGithub size={55}/>,
   },
+
+  {
+    id: 'Trello',
+    icon: <SiTrello size={55}/>,
+  },
+
+  {
+    id: 'Postman',
+    icon: <SiPostman size={55}/>,
+  },
+
 ];
