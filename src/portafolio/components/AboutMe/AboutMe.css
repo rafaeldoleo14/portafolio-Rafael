@@ -13,6 +13,10 @@ section .info h1{
     -webkit-background-clip: text;
 }
 
+section .info a{
+    color: white;
+}
+
 section .info h1 span{
     color: transparent;
     font-weight: 600;
@@ -44,13 +48,11 @@ section .info div button{
     transition: all 0.50s ease;
 }
 
-section .info div i{
-    font-size: 2rem;
+section .info div a{
     transition: all 0.50s ease;
-    cursor: pointer;
 }
 
-section .info div i:hover{
+section .info div a:hover{
     transform: translateY(-10%);
     filter: drop-shadow(0 5px 15px white);
 }

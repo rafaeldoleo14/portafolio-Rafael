@@ -16,11 +16,13 @@
     "@mui/styled-engine-sc": "^5.11.0",
     "@types/react-typical": "^0.1.0",
     "aos": "^2.3.4",
+    "clipboard": "^2.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.1",
     "styled-components": "^5.3.6",
+    "sweetalert2": "^11.7.3",
     "yarn": "^1.22.19"
   },
   "devDependencies": {

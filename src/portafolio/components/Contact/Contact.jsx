@@ -2,9 +2,13 @@ import { Grid, TextField, Typography } from '@mui/material'
 import Aos from 'aos';
 import React from 'react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { useCopyEmail } from '../../hooks/useCopyEmail';
 import './Contact.css'
 
 export const Contact = () => {
+
+    const {onCopyEmail} = useCopyEmail();
 
     useEffect(()=>{
         Aos.init({duration: 3000});
@@ -105,9 +109,17 @@ export const Contact = () => {
                                 sm: '25px'
                             }
                         }}>
-                            <i class="ri-github-fill"></i>
-                            <i class="ri-linkedin-box-fill"></i>
-                            <i class="ri-mail-line"></i>
+                            <Link to='https://github.com/rafaeldoleo14' target='_blank'>
+                                <i class="ri-github-fill"></i>
+                            </Link>
+
+                            <Link to='https://www.linkedin.com/in/rafaelfdoleo/' target='_blank'>
+                                <i class="ri-linkedin-box-fill"></i>
+                            </Link>
+
+                            <Link onClick={onCopyEmail}>
+                                <i class="ri-mail-line"></i>
+                            </Link>
 
                         </Grid>
 

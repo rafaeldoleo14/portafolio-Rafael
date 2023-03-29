@@ -4,8 +4,12 @@ import mainImage from '../../../assets/img/mainImage.png';
 import './AboutMe.css'
 import { Grid, ImageListItem, Typography } from '@mui/material';
 import Aos from 'aos';
+import { Link } from 'react-router-dom';
+import { useCopyEmail } from '../../hooks/useCopyEmail';
 
 export const AboutMe = () => {
+
+    const {onCopyEmail} = useCopyEmail();
 
     useEffect(()=>{
         Aos.init({duration: 3000});
@@ -68,12 +72,26 @@ export const AboutMe = () => {
                     gap: {
                         xs: '15px',
                         sm: '25px'
-                    }
+                    },
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
                 }}>
                     <button>Descargar CV</button>
-                    <i class="ri-github-fill"></i>
-                    <i class="ri-linkedin-box-fill"></i>
-                    <i class="ri-mail-line"></i>
+
+                        <Link to='https://github.com/rafaeldoleo14' target='_blank'>
+                            <i class="ri-github-fill"></i>
+                        </Link>
+
+                        <Link to='https://www.linkedin.com/in/rafaelfdoleo/' target='_blank'>
+                            <i class="ri-linkedin-box-fill"></i>
+                        </Link>
+
+                        <Link onClick={onCopyEmail}>
+                            <i class="ri-mail-line"></i>
+                        </Link>
+
+
                 </Grid>
 
             </Grid>

@@ -40,6 +40,13 @@ form div input{
     border-radius: 5px;
     outline: none;
     border: none;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+form div input::placeholder{
+    color: rgba(255, 255, 255, 0.502);
 }
 
 form div textarea{
@@ -49,6 +56,13 @@ form div textarea{
     border: none;
     resize: none;
     height: 8em;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+form div textarea::placeholder{
+    color: rgba(255, 255, 255, 0.502);
 }
 
 form div button{
@@ -69,6 +83,7 @@ form div button:hover{
 }
 
 div i{
+    color: white;
     font-size: 2rem;
     transition: all 0.50s ease;
     cursor: pointer;
