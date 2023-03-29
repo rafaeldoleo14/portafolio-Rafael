@@ -2,13 +2,11 @@ import { Grid, TextField, Typography } from '@mui/material'
 import Aos from 'aos';
 import React from 'react';
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { useCopyEmail } from '../../hooks/useCopyEmail';
+import { Links } from '../Links/Links';
 import './Contact.css'
+import { ContactForm } from './ContactForm';
 
 export const Contact = () => {
-
-    const {onCopyEmail} = useCopyEmail();
 
     useEffect(()=>{
         Aos.init({duration: 3000});
@@ -18,7 +16,7 @@ export const Contact = () => {
     <>
 
         <Grid id={'contact'} sx={{
-                    height: '100vh',
+                    height: '105vh',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
@@ -33,7 +31,8 @@ export const Contact = () => {
                         sm: '50px',
                         md: '60px',
                         lg: '70px',
-                    }
+                    },
+                    marginBottom: '20px'
                 }}>
 
                     <Typography data-aos="zoom-in" component='h1'
@@ -71,28 +70,7 @@ export const Contact = () => {
                         }
                     }}>
 
-                        <form action="">
-                                
-                            <div>
-                                <label htmlFor="name">Nombre</label>
-                                <input id='name' type="text" name='Name' placeholder='Name'/>
-                            </div>
-
-                            <div>
-                                <label htmlFor="email">Email</label>
-                                <input id='email' type="text" name='email' placeholder='Mail'/>
-                            </div>
-
-                            <div>
-                                <label htmlFor="message">Mensaje</label>
-                                <textarea placeholder='Mensaje' name="message" id="message"/>
-                            </div>
-
-                            <div>
-                                <button>Enviar Mensaje</button>
-                            </div>
-
-                        </form>
+                        <ContactForm/>
 
                         <Grid data-aos="fade-down"
                             data-aos-easing="linear"
@@ -109,17 +87,8 @@ export const Contact = () => {
                                 sm: '25px'
                             }
                         }}>
-                            <Link to='https://github.com/rafaeldoleo14' target='_blank'>
-                                <i class="ri-github-fill"></i>
-                            </Link>
-
-                            <Link to='https://www.linkedin.com/in/rafaelfdoleo/' target='_blank'>
-                                <i class="ri-linkedin-box-fill"></i>
-                            </Link>
-
-                            <Link onClick={onCopyEmail}>
-                                <i class="ri-mail-line"></i>
-                            </Link>
+                            
+                            <Links/>
 
                         </Grid>
 

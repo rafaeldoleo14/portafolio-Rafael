@@ -8,9 +8,7 @@ export const useCopyEmail = () => {
     const onCopyEmail = ()=>{
         const email = 'rafaeldeoleo14@gmail.com';
         copy(email)
-
         Swal.fire('Email copiado', '', 'success')
-
     }
 
     return {
