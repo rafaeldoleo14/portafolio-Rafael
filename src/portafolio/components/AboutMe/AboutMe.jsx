@@ -61,9 +61,11 @@ export const AboutMe = () => {
                 sx={{fontSize: {xs: '23px', sm: '28px', md: '26px', lg: '45px'}}}>Desarrollador <span>Frontend</span></Typography>
 
                 <Typography component='p'
-                sx={{ fontSize: {xs: '15px', sm: '14px', md: '18px'}}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Esse quam mollitia at aperiam? Exercitationem ullam mollitia praesentium repellendus similique dolorum commodi, 
-                facere magnam molestiae vitae a at magni, ab quis.</Typography>
+                sx={{ fontSize: {xs: '15px', sm: '14px', md: '18px'}}}>Soy un desarrollador web que se enfoca en 
+                    la creación de aplicaciones web utilizando tecnologías modernas como React para el desarrollo 
+                    frontend. Además, cuento con conocimientos en el backend y he trabajado en 
+                    proyectos en equipo que me han permitido aplicar y consolidar estas habilidades.
+                    </Typography>
 
                 <Grid sx={{
                     gap: {
