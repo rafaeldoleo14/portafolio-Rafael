@@ -11,7 +11,7 @@ export const projects = [
         id: 1,
         title: 'Netflix Clon',
         img: netflixProject,
-        skillUsed: ['React', 'Redux Tk', 'Firebase', 'Tailwind'],
+        skillUsed: ['React', 'Firebase', 'Tailwind'],
         link: 'https://todoapp-rafael.netlify.app/'
     },
 
