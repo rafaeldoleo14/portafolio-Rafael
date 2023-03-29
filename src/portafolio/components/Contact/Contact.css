@@ -43,10 +43,15 @@ form div input{
     background-color: transparent;
     border: 2px solid white;
     color: white;
+    transition: all 0.40s ease;
 }
 
 form div input::placeholder{
     color: rgba(255, 255, 255, 0.502);
+}
+
+form div input:focus{
+    border-color: var(--main-color);
 }
 
 form div textarea{
@@ -59,10 +64,14 @@ form div textarea{
     background-color: transparent;
     border: 2px solid white;
     color: white;
+    transition: all 0.40s ease;
 }
 
 form div textarea::placeholder{
     color: rgba(255, 255, 255, 0.502);
+}
+form div textarea:focus{
+    border-color: var(--main-color);
 }
 
 form div button{
