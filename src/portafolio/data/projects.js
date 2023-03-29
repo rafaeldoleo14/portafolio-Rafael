@@ -3,11 +3,20 @@ import criptoProject from '../../assets/img/projectsImg/criptoProject.png';
 import fullSecurityProject from '../../assets/img/projectsImg/full security.jpg';
 import weatherProject from '../../assets/img/projectsImg/appClima.png';
 import todoListProject from '../../assets/img/projectsImg/todoListImg.png';
+import netflixProject from '../../assets/img/projectsImg/netflixClonImg.png'
 
 export const projects = [
 
     {
         id: 1,
+        title: 'Netflix Clon',
+        img: netflixProject,
+        skillUsed: ['React', 'Redux Tk', 'Firebase', 'Tailwind'],
+        link: 'https://todoapp-rafael.netlify.app/'
+    },
+
+    {
+        id: 2,
         title: 'Cotizador de Criptomonedas',
         img: criptoProject,
         skillUsed: ['React', 'Typescript', 'CSS',],
@@ -15,7 +24,7 @@ export const projects = [
     },
 
     {
-        id: 2,
+        id: 3,
         title: 'Full Security',
         img: fullSecurityProject,
         skillUsed: ['React', 'CSS',],
@@ -23,7 +32,7 @@ export const projects = [
     },
 
     {
-        id: 3,
+        id: 4,
         title: 'Weather App',
         img: weatherProject,
         skillUsed: ['React', 'Typescript', 'Boostrap'],
@@ -31,12 +40,11 @@ export const projects = [
     },
 
     {
-        id: 4,
+        id: 5,
         title: 'Todo List',
         img: todoListProject,
-        skillUsed: ['React', 'Typescript', 'Redux Tk'],
+        skillUsed: ['React', 'Typescript', 'Redux TK'],
         link: 'https://todoapp-rafael.netlify.app/'
     },
-
 
 ]
