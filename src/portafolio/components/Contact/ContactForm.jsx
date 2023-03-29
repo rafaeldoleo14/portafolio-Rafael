@@ -1,11 +1,14 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import React from "react";
+import React, { useRef } from "react";
 import Swal from "sweetalert2";
 import { useForm } from "../../hooks/useForm";
 import './ContactForm.css'
 import 'sweetalert2/dist/sweetalert2.css'
+import emailjs from '@emailjs/browser';
 
 export const ContactForm = () => {
+
+    const form = useRef();
 
     const {formState} = useForm({
         name: '',
@@ -47,10 +50,19 @@ export const ContactForm = () => {
                 return errores;
             }}
 
-            onSubmit={(valores, { resetForm }) => {
-                console.log("Enviado!!!!");
+            onSubmit={async (valores, { resetForm }) => {
+
+                await emailjs.sendForm('service_udlf9ms', 'template_ozdrctt', form.current, 'ViFhhyDUpay_0f2L9')
+                .then((result) => {
+                    console.log(result.text);
+                    Swal.fire('Mensaje enviado', '', 'success')
+                }, (error) => {
+                    console.log(error.text);
+                    Swal.fire('El mensaje no pudo ser enviado', '', 'error')
+                });
+                
                 resetForm();
-                Swal.fire('Mensaje enviado', '', 'success')
+                
 
             }}
             initialValues={{ ...formState }}
@@ -58,24 +70,24 @@ export const ContactForm = () => {
 
         {({ errors }) => (
 
-            <Form action="">
+            <Form action="" ref={form}>
 
                 <div>
-                    <label htmlFor="name">Nombre</label>
+                    <label htmlFor="name">Nombre <span className='required'>*</span></label>
                     <Field id="name" type="text" name="name" placeholder="Name" />
                     <ErrorMessage name='name' 
                     component={()=> (<p className='error-message'>{errors.name}</p>)}/>
                 </div>
 
                 <div>
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email">Email <span className='required'>*</span></label>
                     <Field id="email" type="text" name="email" placeholder="Mail" />
                     <ErrorMessage name='email' 
                     component={()=> (<p className='error-message'>{errors.email}</p>)}/>
                 </div>
 
                 <div>
-                    <label htmlFor="message">Mensaje</label>
+                    <label htmlFor="message">Mensaje <span className='required'>*</span></label>
                     <Field as="textarea" placeholder="Mensaje" name="message" id="message" />
                     <ErrorMessage name="message" 
                     component={() => (<p className="error-message">{errors.message}</p>)} />
