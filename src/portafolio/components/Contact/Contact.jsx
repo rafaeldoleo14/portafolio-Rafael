@@ -16,7 +16,7 @@ export const Contact = () => {
     <>
 
         <Grid id={'contact'} sx={{
-                    height: '105vh',
+                    height: 'auto',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
@@ -32,6 +32,7 @@ export const Contact = () => {
                         md: '60px',
                         lg: '70px',
                     },
+                    py: '3em',
                     marginBottom: '20px'
                 }}>
 

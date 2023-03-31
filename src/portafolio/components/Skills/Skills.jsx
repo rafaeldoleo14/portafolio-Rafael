@@ -21,7 +21,7 @@ export const Skills = () => {
                 marginBottom: '50px',
                 height: {
                     xs: 'auto',
-                    md: '100vh'
+                    lg: '100vh'
                 },
                 display: 'flex',
                 flexDirection: 'Column',
@@ -36,7 +36,8 @@ export const Skills = () => {
                     sm: '50px',
                     md: '60px',
                     lg: '70px',
-                }
+                },
+                py: '3em'
             }}
         >
 
