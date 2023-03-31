@@ -50,6 +50,14 @@ nav{
     display: flex;
 }
 
+.navegation-content{
+    display: none;
+}
+
+.cv{
+    display: none;
+}
+
 .navbar li p{
     display: none;
 }
@@ -81,7 +89,7 @@ nav{
 .navbar a.active{
     font-weight: 500;
     color: transparent;
-    background-image: linear-gradient(45deg, var(--main-color) 30%, var(--primary-color)50%);
+    background-image: linear-gradient(45deg, var(--main-color) 10%, var(--primary-color)40%);
     background-clip: text;
     -webkit-background-clip: text;
     border-bottom: 1px solid var(--main-color);
@@ -136,32 +144,52 @@ nav{
         position: absolute;
         top: 0%;
         right: -100%;
-        width: 300px;
+        width: 380px;
         height: 100vh;
         background-color: #1b2335;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
         align-items: center;
         transition: all .2s ease;
+        padding-top: 5em;
     }
 
     .ul-content{
+        width: 85%;
         flex-direction: column;
-        gap: 20px;
+        gap: 6px;
     }
 
-    .img-navigation{
-        display: inline;
-        width: 250px;
-        border-radius: 5px;
+    .navegation-content{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navegation-content p{
+        font-size: 1.2em;
+    }
+
+    .navegation-content hr{
+        width: 100%;
+        border: 2px solid var(--main-color);
     }
 
     .navbar li{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
+        background-color: var(--bg-color);
+    }
+
+    .navbar li a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
     }
 
     .navbar li p{
@@ -169,6 +197,10 @@ nav{
         color: #54c4d0;
         font-size: 0.9em;
     }
+
+    .cv{
+        display: inline;
+    }    
 
     .navbar a{
         display: block;
@@ -187,4 +219,12 @@ nav{
     }
 
     
+}
+
+@media (max-width: 775px){
+
+    .navbar{
+        width: 100%;
+    }
+
 }

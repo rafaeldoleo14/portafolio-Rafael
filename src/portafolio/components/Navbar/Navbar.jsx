@@ -27,38 +27,49 @@ export const Navbar = () => {
 
                 <div className='ul-content'>
 
+                    <div className='navegation-content'>
+                        <p>Navegación</p>
+                        <hr />
+                    </div>
+
                     <li>
-                        <p>01.</p>
-                        <a href="/#about" className={`${location.hash === '#about' 
+                        <a href="/#about" onClick={handleClick} className={`${location.hash === '#about' 
                         || location.hash === '' ? 'active' : ''}`}>
-                            Inicio
+                            <p>01.</p> Inicio
                         </a>
                     </li>
 
                     <li>
-                        <p>02.</p>
-                        <a href="/#skills" className={`${location.hash === '#skills' ? 'active' : ''}`}>
-                            Habilidades
+                        <a href="/#skills" onClick={handleClick} className={`${location.hash === '#skills' ? 'active' : ''}`}>
+                            <p>02.</p> Habilidades
                         </a>
                     </li>
 
                     <li>
-                        <p>03.</p>
-                        <a href="/#projects" className={`${location.hash === '#projects' ? 'active' : ''}`}>
-                            Proyectos
+                        <a href="/#projects" onClick={handleClick} className={`${location.hash === '#projects' ? 'active' : ''}`}>
+                            <p>03.</p> Proyectos
                         </a>
                     </li>
 
                     <li>
-                        <p>04.</p>
-                        <a href="/#contact" className={`${location.hash === '#contact' ? 'active' : ''}`}>
-                            Contacto
+                        <a href="/#contact" onClick={handleClick} className={`${location.hash === '#contact' ? 'active' : ''}`}>
+                            <p>04.</p> Contacto
+                        </a>
+                    </li>
+
+                    <div className='navegation-content'>
+                        <p>Descargas</p>
+                        <hr />
+                    </div>
+
+                    <li className='cv'>
+                        <a href="/" className={`${location.hash === '/' ? 'active' : ''}`}>
+                            <p>05.</p>CV.pdf
                         </a>
                     </li>
 
                 </div>
 
-                <img className='img-navigation' src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" alt="" />
 
             </ul>
 
