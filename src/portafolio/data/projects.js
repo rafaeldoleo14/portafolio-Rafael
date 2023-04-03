@@ -12,7 +12,7 @@ export const projects = [
         title: 'Netflix Clon',
         img: netflixProject,
         skillUsed: ['React', 'Firebase', 'Tailwind'],
-        link: 'https://n-clon-rafael.netlify.app'
+        link: 'https://clon-rafael.netlify.app'
     },
 
     {
