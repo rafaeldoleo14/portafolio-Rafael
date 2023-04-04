@@ -98,6 +98,8 @@ nav{
 .main{
     display: flex;
     align-items: center;
+    position: relative;
+    right: 1%;
 }
 
 
@@ -119,7 +121,6 @@ nav{
     .navbar a{
         padding: 5px 0;
         margin: 0px 20px;
-        
     }
 }
 

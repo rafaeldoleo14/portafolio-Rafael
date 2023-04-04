@@ -2,6 +2,8 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import { useClick } from '../../hooks/useClick';
+import {AiOutlineClose} from 'react-icons/ai'
+import {BsList} from 'react-icons/bs'
 import './NavBar.css';
 
 export const Navbar = () => {
@@ -74,8 +76,12 @@ export const Navbar = () => {
             </ul>
 
             <div className="main">
-                <div onClick={handleClick} className={`bx bx-menu ${menuToogle}`} id='menu-icons'>
-                </div>
+
+                {
+                    !menuToogle ? <BsList onClick={handleClick} size={35} cursor='pointer'/> :
+                    <AiOutlineClose onClick={handleClick} size={35} cursor='pointer'/>
+                }
+
             </div>
 
         </nav>
