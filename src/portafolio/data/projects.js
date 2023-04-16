@@ -3,7 +3,8 @@ import criptoProject from '../../assets/img/projectsImg/criptoProject.png';
 import fullSecurityProject from '../../assets/img/projectsImg/full security.jpg';
 import weatherProject from '../../assets/img/projectsImg/appClima.png';
 import todoListProject from '../../assets/img/projectsImg/todoListImg.png';
-import netflixProject from '../../assets/img/projectsImg/netflixClonImg.png'
+import netflixProject from '../../assets/img/projectsImg/netflixClonImg.png';
+import rickProject from '../../assets/img/projectsImg/rickProject.jpg';
 
 export const projects = [
 
@@ -45,6 +46,14 @@ export const projects = [
         img: todoListProject,
         skillUsed: ['React', 'Typescript', 'Redux TK'],
         link: 'https://todoapp-rafael.netlify.app/'
+    },
+
+    {
+        id: 6,
+        title: 'Rick and Morty API',
+        img: rickProject,
+        skillUsed: ['Angular', 'Lazy Loading', 'CSS'],
+        link: 'https://angular-rick-morty.netlify.app/'
     },
 
 ]
