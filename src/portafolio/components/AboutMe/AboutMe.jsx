@@ -5,8 +5,11 @@ import './AboutMe.css'
 import { Grid, ImageListItem, Typography } from '@mui/material';
 import Aos from 'aos';
 import { Links } from '../Links/Links';
+import { useDownloadPdf } from '../../hooks/useDownloadPdf';
 
 export const AboutMe = () => {
+
+    const {descargarCV} = useDownloadPdf();
 
     useEffect(()=>{
         Aos.init({duration: 3000});
@@ -76,7 +79,7 @@ export const AboutMe = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                 }}>
-                    <button>Descargar CV</button>
+                    <button onClick={descargarCV}>Descargar CV</button>
 
                     <Links/>
 
