@@ -2,6 +2,7 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import { useClick } from '../../hooks/useClick';
+import {useDownloadPdf} from '../../hooks/useDownloadPdf'
 import {AiOutlineClose} from 'react-icons/ai'
 import {BsList} from 'react-icons/bs'
 import './NavBar.css';
@@ -10,6 +11,7 @@ export const Navbar = () => {
 
     const {btnState, handleClick} = useClick();
     const location = useLocation();
+    const {descargarCV} = useDownloadPdf();
 
     const menuToogle = btnState ? 'bx-x' : '';
     const navbarToogle = btnState ? 'open' : '';
@@ -64,8 +66,8 @@ export const Navbar = () => {
                         <hr />
                     </div>
 
-                    <li className='cv'>
-                        <a href="/" className={`${location.hash === '/' ? 'active' : ''}`}>
+                    <li className='cv' onClick={descargarCV}>
+                        <a href="#" className='active'>
                             <p>05.</p>CV.pdf
                         </a>
                     </li>

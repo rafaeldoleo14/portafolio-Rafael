@@ -1,6 +1,6 @@
 
 import React from 'react'
-import pdfURL from '../../assets/cv/RafaelDoleoCV.pdf';
+import pdfURL from '../../assets/cv/RafaelDoleo-CV.pdf'
 
 export const useDownloadPdf = () => {
 
